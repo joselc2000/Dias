@@ -1,8 +1,9 @@
 import java.util.Scanner;
 public class Dias {
-    public static void main (String[]args){
+    public static void main (String[] args){
         Scanner almacenar = new Scanner(System.in);
-        int numeroIngresado = almacenar.nextInt();;
+        System.out.println("Escribe tu numero");
+        int numeroIngresado = almacenar.nextInt();
         if (numeroIngresado != 0){
             if(numeroIngresado==1){
                 System.out.println("Tu dia es Domingo");
@@ -19,6 +20,8 @@ public class Dias {
             }else if(numeroIngresado==7){
                 System.out.println("Tu dia es Sabado");
             }
+        }else{
+            System.out.println("Tu dia no es valido");
         }
 
         }
